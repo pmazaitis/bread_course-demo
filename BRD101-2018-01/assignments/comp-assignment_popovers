@@ -1,0 +1,19 @@
+\startcomponent comp-syllabus
+
+% This component is part of the course materials for our bread course
+\project proj-web_design
+
+% This component is part of the course materials for Spring, 2018
+\product prod-spring2018
+
+\setvariables[local]
+        [id=s18syl,
+         version=001,
+        ]
+
+\startchapter[title={Syllabus}]
+
+
+\stopchapter
+
+\stopcomponent

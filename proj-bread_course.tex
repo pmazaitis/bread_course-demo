@@ -1,0 +1,46 @@
+% Project file for demonstration course materials.
+%
+% This file is part of a suite...
+%
+
+% Our project starts with a declaration in this file between two pieces of markup: a \startproject command and a \stopproject command. The \startproject command takes a single argument: a label for the project.
+
+\startproject bread_course-demo
+
+% Environment Files
+%
+% Using ConTeXt's project structure, we can load document setups for
+% every document in the project, here at the project level. This is
+% very useful for keeping the design of all the documents consistant!
+
+% We do not need to include the extension with the \environment
+% command, but it doesn't hurt anything if we do.
+
+% I find it useful to seperate out different functionality into
+% smaller, forcued environment files. The -debug file can be uncommented
+% to increase debugging output, but on the logs and on the page.
+
+% \environment env-bread_course-debug
+\environment env-bread_course-general
+\environment env-bread_course-typography
+\environment env-bread_course-layout
+\environment env-bread_course-forms
+
+% Now we need to reference our products. For this demo, each product 
+% is a semester's worth of course materials: syllabus, schedule, 
+% assignment prompts, etc. 
+
+% I have invented the ficticious course id 'BRD101' here.
+
+\product BRD101-2018-01 % Spring semester, 2018
+
+% In future, we can spin up new semesters by adding new products:
+
+%\product BRD101-2018-03
+%\product BRD101-2019-01
+%\product BRD101-2019-03
+
+% ...and populating those project areas with materials, as needed.
+
+
+\stopproject

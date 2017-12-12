@@ -1,0 +1,35 @@
+\startproduct prod-spring2018
+
+% We want to declare this product file as part of our demo course materials project 
+\project bread_course-demo
+
+% Setups we put in the following environment command apply when we are
+% compiling the product as a whole
+\environment env-bread_course-demo
+
+% We can instruct the product compilation to look in our subdirectories, 
+% to keep our directories managable
+\usepath[syllabus, schedule, assignments]
+
+% We can add a table of contents here, for when we are compiling the 
+% product as a whole (followed by a page break)
+
+\placecontent
+
+\page
+
+% Now, we can pull in our components; in this demo, each component is an individual
+% document that makes up the whole of the course materials
+
+% Syllabus
+\component comp-syllabus
+
+% Schedule
+\component comp-schedule
+
+% Assignments
+\component comp-assignment_pita
+\component comp-assignment_pizza
+\component comp-assignment_popovers
+
+\stopproduct
