@@ -1,12 +1,13 @@
 \startenvironment env-bread_course-typography
 
+\project proj-bread_course-demo
+
+% Set up some fonts for serif, sans serif, and monospace aliases 
 \definefontfamily[breaddemo][rm][Minion Pro]
 \definefontfamily[breaddemo][ss][Myriad Pro]
 \definefontfamily[breaddemo][tt][Courier][features=none]
 
-% \definefontfamily[mainface][rm][Verdana]
-%     \setupbodyfont[mainface, 10pt]
-
-\setupbodyfont[breaddemo,ss,11pt]
+% Use our sans serif font as our document font, at 12pt 
+\setupbodyfont[breaddemo,ss,12pt]
 
 \stopenvironment
